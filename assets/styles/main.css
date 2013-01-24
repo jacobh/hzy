@@ -1,7 +1,9 @@
 @charset "UTF-8";
+body, h1, h3, li {
+    font-family: "ff-meta-serif-web-pro";
+}
 body {
     background-color: #FFFFF6;
-    font-family: "ff-meta-serif-web-pro";
 }
 .container {
     margin-top:150px;
