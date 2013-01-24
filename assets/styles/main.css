@@ -8,6 +8,9 @@ body {
 }
 img {
     width:100%;
+    -moz-box-shadow: 0 0 15px -5px #777;
+    -webkit-box-shadow: 0 0 15px -5px#777;
+    box-shadow: 0 0 15px -5px #777;
 }
 /* generic styles and full size grid */
 h1 {
