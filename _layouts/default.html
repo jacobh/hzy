@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Jacob Haslehurst</title>
+    {% if page.title %}
+        <title>{{ page.title }} - Jacob Haslehurst</title>
+    {% else %}
+        <title>Jacob Haslehurst</title>
+    {% endif %}
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="/assets/styles/skeleton.css">
