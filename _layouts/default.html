@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    {% if page.title %}
+    {% if page.title and page.title != 'Home' %}
         <title>{{ page.title }} - Jacob Haslehurst</title>
     {% else %}
         <title>Jacob Haslehurst</title>
@@ -29,12 +29,19 @@
             </a>
             <h1 class="name"><a class="underline-on-hover" href="/">Jacob Haslehurst</a></h1>
             <h3>Web Developer, Photographer</h3>
+            <hr>
+            <nav>
+                {% for page in site.pages %}
+                    <li><a class='underline-on-hover' href="{{ page.url }}">{{ page.title }}</a></li>
+                {% endfor %}
+            </nav>
+            <hr>
             <ul class="links">
-                <li><a href="mailto:jacob@haslehurst.net">Email</a></li>
-                <li><a href="http://www.twitter.com/hzy_">Twitter</a></li>
-                <li><a href="http://github.com/hzy-">GitHub</a></li>
-                <li><a href="http://flickr.com/photos/jhaslehurst">Flickr</a></li>
-                <li><a href="http://blog.haslehurst.net">Tumblr</a></li>
+                <li><a class='underline-on-hover' href="mailto:jacob@haslehurst.net">Email</a></li>
+                <li><a class='underline-on-hover' href="http://www.twitter.com/hzy_">Twitter</a></li>
+                <li><a class='underline-on-hover' href="http://github.com/hzy-">GitHub</a></li>
+                <li><a class='underline-on-hover' href="http://flickr.com/photos/jhaslehurst">Flickr</a></li>
+                <li><a class='underline-on-hover' href="http://blog.haslehurst.net">Tumblr</a></li>
             </ul>
         </div>
         <div class="twelve columns omega">
