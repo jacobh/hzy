@@ -35,7 +35,7 @@ h3 {
 }
 .links li {
     display:block;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 28px;
 }
 .links li:before {
@@ -80,6 +80,32 @@ h3 {
     font-size:18px;
     padding-bottom: 50px;
 }
+
+/* resume */
+#resume {
+    margin-left:20px;
+}
+#resume li, #resume p {
+    font-size:18px;
+    line-height:150%;
+}
+#resume li > p {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+#resume li:before {
+    content:'•';
+    margin: 0 7px;
+    color: #666;
+}
+#resume > ul > li {
+    margin-bottom: 15px;
+}
+#resume h2 {
+    font-size:30px;
+    margin-bottom: 10px;
+}
+
 /* smaller than that */
 @media only screen and (max-width: 959px) {
     h3 {

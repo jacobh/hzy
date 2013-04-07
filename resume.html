@@ -1,0 +1,40 @@
+---
+layout: default
+title: Résumé
+permalink: /resume.html
+---
+{% capture resume_markdown %}
+# Résumé
+
+## Education
+
+- Completed WACE (2011)
+
+
+## Skills & Abilities
+
+- Python / Django
+
+  - Server-side MVC
+  - Server scripting / Automated deploys using Fabric
+
+- HTML / CSS
+  
+  - CSS Pre-processors (SCSS / LESS)
+
+- Javascript / Coffeescript
+
+  - Main developer on 4000+ line codebase
+  - jQuery
+  - Underscore.js
+  - Require.js / AMD pattern
+
+- DCVS (Git)
+
+## Work Examples
+
+Soon&trade;
+{% endcapture %}
+<article id="resume">
+    {{ resume_markdown|markdownify }}
+</article>
