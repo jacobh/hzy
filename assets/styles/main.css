@@ -21,6 +21,14 @@ img {
 .underline-on-hover:hover {
     text-decoration: underline;
 }
+li:before {
+    content:'•';
+    margin: 0 7px;
+    color: #666;
+}
+li {
+    list-style: none;
+}
 
 h1.name {
     margin-top:10px;
@@ -33,14 +41,13 @@ h3 {
 .links {
     margin-top: 20px;
 }
-.links li {
+.links li, nav li {
     display:block;
     font-size: 20px;
     line-height: 28px;
 }
-.links li:before {
-    content:'•';
-    margin: 0 7px;
+#sidebar hr {
+    margin: 20px 0;
 }
 
 /* post list */
@@ -92,11 +99,6 @@ h3 {
 #resume li > p {
     display: inline-block;
     margin-bottom: 4px;
-}
-#resume li:before {
-    content:'•';
-    margin: 0 7px;
-    color: #666;
 }
 #resume > ul > li {
     margin-bottom: 15px;
