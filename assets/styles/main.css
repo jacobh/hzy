@@ -61,6 +61,10 @@ h3 {
     padding: 7px 0 1px;
     margin:0;
 }
+.posts li:before {
+    content:none;
+    margin:0;
+}
 .posts li:last-child {
     border-bottom:1px solid #ccccce;
 }
