@@ -31,8 +31,12 @@
             <h3>Web Developer, Photographer</h3>
             <hr>
             <nav>
-                {% for page in site.pages %}
-                    <li><a class='underline-on-hover' href="{{ page.url }}">{{ page.title }}</a></li>
+                {% for weight in (1..100) %}
+                    {% for page in site.pages %}
+                        {% if page.weight == weight %}
+                            <li><a class='underline-on-hover' href="{{ page.url }}">{{ page.title }}</a></li>
+                        {% endif %}
+                    {% endfor %}
                 {% endfor %}
             </nav>
             <hr>
