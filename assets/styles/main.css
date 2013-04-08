@@ -91,6 +91,9 @@ h3 {
     font-size:18px;
     padding-bottom: 50px;
 }
+.post .content hr {
+    border-color: #f4f4f4;
+}
 
 /* resume */
 #resume {
