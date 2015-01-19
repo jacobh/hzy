@@ -6,7 +6,7 @@ body {
     background-color: #FFFFF6;
 }
 .container {
-    margin-top:50px;
+    margin-top:100px;
 }
 img {
     width:100%;
@@ -31,7 +31,7 @@ li {
 }
 
 h1.name {
-    margin-top:10px;
+    margin:15px 0 0 10px;
     font-size: 30px;
 }
 h3 {
@@ -42,7 +42,7 @@ h3 {
     margin-top: 20px;
 }
 .links li, nav li {
-    display:block;
+    display:inline-block;
     font-size: 20px;
     line-height: 28px;
 }

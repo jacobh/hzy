@@ -1,17 +1,40 @@
----
-layout: default
-title: Home
-permalink: /
-weight: 1
----
-<ol class="posts">
-    {% for post in site.posts %}
-        <li>
-            <h4 class="title">
-                <a class="underline-on-hover" href="{{ post.url }}">{{ post.title }}</a>
-            </h4>
-            <span class="date">{{ post.date | date: "%B %Y" }}</span>
-            <div class="clearfix"></div>
-        </li>
-    {% endfor %}
-</ol>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jacob Haslehurst</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/main.css">
+
+    <!-- typekit -->
+    <script type="text/javascript" src="//use.typekit.net/rjs0jch.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <!-- google analytics -->
+    <script type="text/javascript">
+        var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-26678951-7"]);_gaq.push(["_trackPageview"]);(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();
+    </script>
+
+</head>
+<body>
+    <section class="container">
+        <div id="sidebar" class="four columns alpha">
+            <a href="/">
+                <img src="/assets/images/portrait.jpg" alt='Jacob'>
+            </a>
+        </div>
+        <div class="twelve columns omega">
+            <h1 class="name"><a class="underline-on-hover" href="/">Jacob Haslehurst</a></h1>
+            <ul class="links">
+                <li><a class='underline-on-hover' href="mailto:jacob@haslehurst.net">Email</a></li>
+                <li><a class='underline-on-hover' href="http://www.twitter.com/hzy_">Twitter</a></li>
+                <li><a class='underline-on-hover' href="http://github.com/hzy-">GitHub</a></li>
+                <li><a class='underline-on-hover' href="https://soundcloud.com/jacob-haslehurst">Soundcloud</a></li>
+                <li><a class='underline-on-hover' href="http://instagram.com/hzy_">Instagram</a></li>
+                <li><a class='underline-on-hover' href="http://flickr.com/photos/jhaslehurst">Flickr</a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
