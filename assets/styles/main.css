@@ -21,7 +21,7 @@ img {
 .underline-on-hover:hover {
     text-decoration: underline;
 }
-li:before {
+li:not(:first-child):before {
     content:'•';
     margin: 0 7px;
     color: #666;
@@ -39,7 +39,7 @@ h3 {
     font-size:22px;
 }
 .links {
-    margin-top: 20px;
+    margin: 20px 0 0 10px;
 }
 .links li, nav li {
     display:inline-block;
